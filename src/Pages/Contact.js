@@ -36,16 +36,16 @@ export const Contact = () => {
   return (
     <div className="w-screen h-screen snap-start w-full flex-shrink-0 h-screen flex flex-col items-center justify-center scroll-smooth">
       <motion.div
-        className=" w-full h-full flex flex-row justify-center items-center"
+        className=" w-full h-full flex lg:flex-row justify-center items-center"
         initial={{ opacity: 0, translateX: -10 }}
         transition={{ delay: 1, duration: 0.7 }}
         animate={{ translateX: 0, opacity: 1 }}
       >
-        <div className="w-1/2 h-full  flex flex-col gap-20 justify-center items-center">
-          <div className="w-full flex justify-center items-center text-2xl font-semibold">
+        <div className="w-1/2 flex flex-col gap-20 items-start lg:items-center p-7">
+          <div className="flex text-[.84rem] md:text-[1.05rem] lg:text-2xl font-semibold">
             <h1>Get In Touch With Me</h1>
           </div>
-          <div className="w-1/2 flex flex-col gap-12 justify-center items-center text-left text-3xl leading-snug">
+          <div className="w-1/2 flex flex-col gap-12 justify-center items-center text-3xl leading-snug  hidden lg:flex">
             <p>
               I'd love to hear back from you, and thank you for looking though
               my site!
@@ -55,7 +55,7 @@ export const Contact = () => {
               side of the page!
             </p>
           </div>
-          <div className="w-1/2 flex flex-col gap-5 justify-center items-start text-left text-2xl">
+          <div className="w-1/2 flex flex-col gap-5 justify-center items-start text-left text-[1.3rem] md:text-2xl">
             <div className="flex justify-center items-center gap-5">
               <FontAwesomeIcon icon={faLocationDot} />
               <p>Sherwood, OR</p>
@@ -77,9 +77,9 @@ export const Contact = () => {
           </div>
         </div>
         <div className="w-1/2 flex justify-start items-center">
-          <div className="w-3/4 h-full flex justify-center items-center p-5 border rounded-md border-[#537dac]">
+          <div className="w-3/4 flex justify-center items-center p-5 border rounded-md border-[#537dac]">
             <form
-              className="flex flex-col justify-start items-center w-full h-full font-Lato"
+              className="flex flex-col justify-start items-center w-full font-Lato"
               ref={form}
               onSubmit={sendEmail}
             >

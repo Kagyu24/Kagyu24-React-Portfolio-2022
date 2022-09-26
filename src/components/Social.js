@@ -19,38 +19,46 @@ const Social = () => {
       transition={{ duration: 0.7 }}
       animate={{ opacity: 1 }}
     >
-      <a
+      <motion.a
         className="w-10 h-10"
         href="https://twitter.com/Kagyu24"
         target="_blank"
         rel="noreferrer"
+        animate={{ x: [null, -10, 0] }}
+        transition={{ duration: 0.5, delay: 2 }}
       >
         <Twitter size="42" />
-      </a>
-      <a
+      </motion.a>
+      <motion.a
         className="w-10 h-10"
         href="https://codepen.io/Kagyu24"
         target="_blank"
         rel="noreferrer"
+        animate={{ x: [null, -10, 0] }}
+        transition={{ duration: 0.5, delay: 2.1 }}
       >
         <Codepen size="38" />
-      </a>
-      <a
+      </motion.a>
+      <motion.a
         className="w-10 h-10"
         href="https://www.linkedin.com/in/justinlemos24/"
         target="_blank"
         rel="noreferrer"
+        animate={{ x: [null, -10, 0] }}
+        transition={{ duration: 0.5, delay: 2.2 }}
       >
         <LinkedinWithCircle size="38" />
-      </a>
-      <a
+      </motion.a>
+      <motion.a
         className="w-10 h-10"
         href="https://github.com/Kagyu24"
         target="_blank"
         rel="noreferrer"
+        animate={{ x: [null, -10, 0] }}
+        transition={{ duration: 0.5, delay: 2.3 }}
       >
         <Github size="42" />
-      </a>
+      </motion.a>
     </motion.div>
   );
 };
