@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 export const About = () => {
   return (
-    <div className="w-screen h-screen snap-start flex-shrink-0 h-screen flex items-center justify-center scroll-smooth">
+    <div
+      id="about"
+      className="w-screen h-screen snap-start flex-shrink-0 h-screen flex items-center justify-center scroll-smooth"
+    >
       <motion.div
         className=" w-full
     h-full
@@ -61,17 +64,19 @@ items-center"
             </div>
             <div
               className=" h-full
-  w-1/2
+  w-3/4
+  md:w-1/2
   flex
   justify-center
   items-center"
             >
               <div
-                className="w-full lg:w-3/4
+                className="w-full md:w-3/4
   flex
+  md:flex-row
   justify-center
   items-center
-  border-4
+  border-2
   border-rounded
   rounded-md"
               >

@@ -14,7 +14,8 @@ const Social = () => {
     right-4
     bottom-[40%]
     gap-2
-    z-10"
+    z-10
+    invisible sm:visible"
       initial={{ opacity: 0 }}
       transition={{ duration: 0.7 }}
       animate={{ opacity: 1 }}
@@ -25,7 +26,7 @@ const Social = () => {
         target="_blank"
         rel="noreferrer"
         animate={{ x: [null, -10, 0] }}
-        transition={{ duration: 0.5, delay: 2 }}
+        transition={{ duration: 0.5, delay: 2.7 }}
       >
         <Twitter size="42" />
       </motion.a>
@@ -35,7 +36,7 @@ const Social = () => {
         target="_blank"
         rel="noreferrer"
         animate={{ x: [null, -10, 0] }}
-        transition={{ duration: 0.5, delay: 2.1 }}
+        transition={{ duration: 0.5, delay: 2.8 }}
       >
         <Codepen size="38" />
       </motion.a>
@@ -45,7 +46,7 @@ const Social = () => {
         target="_blank"
         rel="noreferrer"
         animate={{ x: [null, -10, 0] }}
-        transition={{ duration: 0.5, delay: 2.2 }}
+        transition={{ duration: 0.5, delay: 2.9 }}
       >
         <LinkedinWithCircle size="38" />
       </motion.a>
@@ -55,7 +56,7 @@ const Social = () => {
         target="_blank"
         rel="noreferrer"
         animate={{ x: [null, -10, 0] }}
-        transition={{ duration: 0.5, delay: 2.3 }}
+        transition={{ duration: 0.5, delay: 3 }}
       >
         <Github size="42" />
       </motion.a>

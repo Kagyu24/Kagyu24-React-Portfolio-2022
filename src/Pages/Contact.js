@@ -8,6 +8,7 @@ import {
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import Scroll from "../assets/icons/11-arrow-up-solid.gif";
 
 export const Contact = () => {
   const form = useRef();
@@ -34,15 +35,18 @@ export const Contact = () => {
       );
   };
   return (
-    <div className="w-screen h-screen snap-start w-full flex-shrink-0 h-screen flex flex-col items-center justify-center scroll-smooth">
+    <div
+      id="contact"
+      className="w-screen h-screen snap-start w-full flex-shrink-0 h-screen flex flex-col items-center justify-center scroll-smooth"
+    >
       <motion.div
-        className=" w-full h-full flex lg:flex-row justify-center items-center"
+        className=" w-full h-full flex flex-col sm:flex-row justify-center items-center"
         initial={{ opacity: 0, translateX: -10 }}
         transition={{ delay: 1, duration: 0.7 }}
         animate={{ translateX: 0, opacity: 1 }}
       >
-        <div className="w-1/2 flex flex-col gap-20 items-start lg:items-center p-7">
-          <div className="flex text-[.84rem] md:text-[1.05rem] lg:text-2xl font-semibold">
+        <div className="w-full sm:w-1/2 h-1/2 flex flex-col sm:gap-20 justify-center items-start lg:items-center sm:p-7">
+          <div className="w-full sm:w-auto flex justify-center items-center text-[.8rem] sm:text-[.84rem] md:text-[1.05rem] lg:text-2xl font-semibold">
             <h1>Get In Touch With Me</h1>
           </div>
           <div className="w-1/2 flex flex-col gap-12 justify-center items-center text-3xl leading-snug  hidden lg:flex">
@@ -55,29 +59,29 @@ export const Contact = () => {
               side of the page!
             </p>
           </div>
-          <div className="w-1/2 flex flex-col gap-5 justify-center items-start text-left text-[1.3rem] md:text-2xl">
-            <div className="flex justify-center items-center gap-5">
+          <div className="w-full sm:w-1/2 flex flex-col sm:gap-5 justify-center items-center sm:items-start sm:text-[1.3rem] md:text-2xl">
+            <div className=" flex justify-start items-center gap-5">
               <FontAwesomeIcon icon={faLocationDot} />
               <p>Sherwood, OR</p>
             </div>
             <a
               href="tel:541-228-2538"
-              className="flex justify-center items-center gap-5"
+              className="flex justify-start items-center gap-5"
             >
               <FontAwesomeIcon icon={faPhone} />
               <p>541-228-2538</p>
             </a>
             <a
               href="mailto:justinlemos25@gmail.com"
-              className="flex justify-center items-center gap-5"
+              className=" flex justify-start items-center gap-5"
             >
               <FontAwesomeIcon icon={faEnvelope} />
               <p>justinlemos25@gmail.com</p>
             </a>
           </div>
         </div>
-        <div className="w-1/2 flex justify-start items-center">
-          <div className="w-3/4 flex justify-center items-center p-5 border rounded-md border-[#537dac]">
+        <div className="h-1/2 w-full sm:w-1/2 flex justify-start items-center">
+          <div className="w-full sm:w-3/4 flex justify-center items-center p-5 border rounded-md border-[#537dac]">
             <form
               className="flex flex-col justify-start items-center w-full font-Lato"
               ref={form}
@@ -121,6 +125,13 @@ export const Contact = () => {
           </div>
         </div>
       </motion.div>
+      <a href="#about" className="fixed right-[.5%] bottom-[1%] pointer">
+        <img
+          className="w-12 h-12 md:w-14 md:h-14"
+          src={Scroll}
+          alt="scroll-up"
+        />
+      </a>
       <Footer />
     </div>
   );

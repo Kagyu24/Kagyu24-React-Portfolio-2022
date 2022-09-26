@@ -15,7 +15,8 @@ const Navbar = () => {
     flex
     items-center
     justify-between
-    px-10
+    px-4
+    sm:px-8
     py-3
     bg-[#0B0B10]
     z-10 font-Lato "
@@ -23,15 +24,11 @@ const Navbar = () => {
       transition={{ duration: 0.7 }}
       animate={{ opacity: 1 }}
     >
-      <div
-        className="  flex
-    items-center
-    gap-5"
-      >
-        <div className="w-14">
+      <div className="flex items-center gap-5" >
+        <div className="w-10 sm:w-14">
           <img src={Logo} alt="/" />
         </div>
-        <h1 className="text-3xl">Justin Lemos</h1>
+        <h1 className="text-2xl sm:text-3xl">Justin Lemos</h1>
       </div>
       <Burger
         className="md:hidden"
@@ -44,16 +41,16 @@ const Navbar = () => {
 gap-8 hidden"
       >
         <li className="text-lg">
-          <a href="/">About</a>
+          <a href="#about">About</a>
         </li>
         <li className="text-lg">
-          <a href="/">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li className="text-lg">
           <a href="/">Resume</a>
         </li>
         <li className="text-lg">
-          <a href="/">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </motion.nav>

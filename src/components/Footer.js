@@ -6,10 +6,13 @@ const Footer = () => {
     <motion.footer
       className="w-full
     p-5
+    mt-16
+    sm:mt-0
     text-center
     bottom-0
     left-0
-    text-gray-600 font-Lato"
+    text-gray-600 font-Lato
+    text-sm sm:text-base"
       initial={{ opacity: 0 }}
       transition={{ duration: 0.7 }}
       animate={{ opacity: 1 }}
