@@ -1,5 +1,5 @@
 import React from "react";
-import Me from "../assets/projects/Me1.webp";
+import Me from "../assets/images/ProfilePic.webp";
 import { motion } from "framer-motion";
 
 export const About = () => {
@@ -30,7 +30,7 @@ flex-col
 justify-center
 items-center"
         >
-          <h1 className="font-semibold">About Me</h1>
+          <h1 className="font-semibold mb-5">About Me</h1>
           <div
             className=" w-3/4
   flex
@@ -55,7 +55,8 @@ items-center"
   md:leading-10
   justify-center
   items-center
-  text-center"
+  text-center
+  mt-5"
             >
               <p>
                 Hi, I'm Justin Lemos! I've been learning about Front-End Web

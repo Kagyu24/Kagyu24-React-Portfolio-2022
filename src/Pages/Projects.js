@@ -18,7 +18,7 @@ export const Projects = () => {
         transition={{ delay: 1, duration: 0.7 }}
         animate={{ translateX: 0, opacity: 1 }}
       >
-        <h1 className="font-semibold mb-[-12rem] sm:mb-[-12rem] lg:mb-[-12rem]">
+        <h1 className="font-semibold mb-[-14rem] sm:mb-[-10rem] lg:mb-[-12rem]">
           Projects
         </h1>
         <h2 className="text-xl mb-[-10rem] sm:mb-[-9rem] lg:mb-[-10rem] border-b-[1px] p-2">
@@ -146,7 +146,7 @@ export const Projects = () => {
                   My own personal website
                 </h2>
               </div>
-              <h3>React | Tailwind CSS | Framer Motion</h3>
+              <h3>React | Tailwind CSS | Framer Motion | Mantine UI</h3>
             </motion.div>
           </motion.a>
           <motion.a

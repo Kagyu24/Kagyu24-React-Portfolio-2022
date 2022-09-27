@@ -41,7 +41,7 @@ const Navbar = () => {
           <img src={Logo} alt="/" />
         </div>
         <a
-          href="/"
+          href="#about"
           className="text-2xl sm:text-3xl hover:text-[#537DAC] transition-all"
         >
           Justin Lemos
@@ -52,9 +52,11 @@ const Navbar = () => {
         onChange={setOpened}
         classNames={classes}
         position="bottom"
-        offset={20}
+        offset={11}
         shadow="xl"
         width="100vw"
+        transition="fade"
+        transitionDuration={250}
         withArrow
       >
         <Menu.Target>
@@ -67,11 +69,21 @@ const Navbar = () => {
         </Menu.Target>
 
         <Menu.Dropdown>
-          <Menu.Item>Settings</Menu.Item>
+          <Menu.Item component="a" href="#about">
+            About
+          </Menu.Item>
           <Menu.Divider />
-          <Menu.Item>Messages</Menu.Item>
+          <Menu.Item component="a" href="#projects">
+            Projects
+          </Menu.Item>
           <Menu.Divider />
-          <Menu.Item>Gallery</Menu.Item>
+          <Menu.Item component="a" href={PDF} download="JLemosResume.pdf">
+            Resume
+          </Menu.Item>
+          <Menu.Divider />
+          <Menu.Item component="a" href="#contact">
+            Contact
+          </Menu.Item>
         </Menu.Dropdown>
       </Menu>
       <ul
