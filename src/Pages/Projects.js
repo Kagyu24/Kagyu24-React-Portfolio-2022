@@ -31,7 +31,9 @@ export const Projects = () => {
               transition: { duration: 0.1, ease: "easeInOut" },
             }}
             whileTap={{ scale: 1 }}
-            href="/"
+            href="https://waves-musicplayer1.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
             draggable={false}
             className="w-[16rem] sm:w-[18rem] md:w-[20rem] lg:w-[25rem] xl:w-[35rem] flex rounded overflow-hidden relative bg-[#15151F]"
           >
@@ -73,7 +75,9 @@ export const Projects = () => {
               transition: { duration: 0.1, ease: "easeInOut" },
             }}
             whileTap={{ scale: 1 }}
-            href="/"
+            href="https://switch-ui.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
             draggable={false}
             className="w-[16rem] sm:w-[18rem] md:w-[20rem] lg:w-[25rem] xl:w-[35rem] flex rounded overflow-hidden relative bg-[#15151F]"
           >
@@ -114,7 +118,7 @@ export const Projects = () => {
               transition: { duration: 0.1, ease: "easeInOut" },
             }}
             whileTap={{ scale: 1 }}
-            href="/"
+            href="#about"
             draggable={false}
             className="w-[16rem] h-[8rem] sm:w-[18rem] sm:h-[10rem] md:w-[20rem] lg:w-[25rem] xl:w-[35rem] lg:h-auto flex rounded border hover:border-none overflow-hidden relative bg-[#15151F]"
           >
@@ -243,7 +247,9 @@ export const Projects = () => {
               transition: { duration: 0.1, ease: "easeInOut" },
             }}
             whileTap={{ scale: 1 }}
-            href="/"
+            href="https://kagyu24.itch.io/pong-in-space"
+            target="_blank"
+            rel="noreferrer"
             draggable={false}
             className="hidden w-[18rem] md:w-[20rem] lg:w-[25rem] xl:w-[35rem] sm:flex rounded overflow-hidden relative bg-[#15151F]"
           >
