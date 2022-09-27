@@ -6,22 +6,25 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="w-screen h-screen snap-start flex-shrink-0 h-screen flex items-center justify-center scroll-smooth"
+      className="w-screen h-screen snap-start flex-shrink-0 flex items-center justify-center scroll-smooth"
     >
       <motion.div
         className=" w-full
-    h-full
     flex
     justify-center
     items-center
+    select-none
     "
         initial={{ opacity: 0, translateX: -10 }}
-        transition={{ delay: 1, duration: 0.7 }}
+        transition={{
+          delay: 1,
+          duration: 0.7,
+          ease: "linear",
+        }}
         animate={{ translateX: 0, opacity: 1 }}
       >
         <div
           className="w-full
-h-full
 flex
 flex-col
 justify-center
@@ -30,7 +33,6 @@ items-center"
           <h1 className="font-semibold">About Me</h1>
           <div
             className=" w-3/4
-  h-3/4
   flex
   flex-col-reverse
   md:flex-row  
@@ -81,9 +83,10 @@ items-center"
   rounded-md"
               >
                 <img
-                  className="w-full h-full object-cover rounded-sm"
+                  className="w-full h-full object-cover rounded-sm select-none"
                   src={Me}
                   alt="/"
+                  draggable={false}
                 />
               </div>
             </div>

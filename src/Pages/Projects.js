@@ -32,10 +32,12 @@ export const Projects = () => {
             }}
             whileTap={{ scale: 1 }}
             href="/"
-            className="w-[16rem] sm:w-[18rem] md:w-[20rem] lg:w-[32rem] flex rounded overflow-hidden relative bg-[#15151F]"
+            draggable={false}
+            className="w-[16rem] sm:w-[18rem] md:w-[20rem] lg:w-[25rem] xl:w-[35rem] flex rounded overflow-hidden relative bg-[#15151F]"
           >
             <img
               className="w-full h-full object-cover"
+              draggable={false}
               src={Waves}
               alt="Music Player app"
             />
@@ -51,6 +53,7 @@ export const Projects = () => {
                 background: "rgba(0,0,0,.8)",
                 transition: { duration: 0.1, ease: "easeInOut" },
               }}
+              draggable={false}
               className="absolute w-full h-full flex flex-col justify-center items-center md:text-sm lg:text-base p-2 text-center select-none"
             >
               <div className="flex flex-col gap-3 justify-center items-center lg:mb-5">
@@ -71,10 +74,12 @@ export const Projects = () => {
             }}
             whileTap={{ scale: 1 }}
             href="/"
-            className="w-[16rem] sm:w-[18rem] md:w-[20rem] lg:w-[32rem] flex rounded overflow-hidden relative bg-[#15151F]"
+            draggable={false}
+            className="w-[16rem] sm:w-[18rem] md:w-[20rem] lg:w-[25rem] xl:w-[35rem] flex rounded overflow-hidden relative bg-[#15151F]"
           >
             <img
               className="w-full h-full object-cover"
+              draggable={false}
               src={UI}
               alt="Music Player app"
             />
@@ -105,15 +110,17 @@ export const Projects = () => {
           </motion.a>
           <motion.a
             whileHover={{
-              scale: 1.08,
+              scale: 1.05,
               transition: { duration: 0.1, ease: "easeInOut" },
             }}
             whileTap={{ scale: 1 }}
             href="/"
-            className="w-[16rem] h-[8rem] sm:w-[18rem] sm:h-[10rem] md:w-[20rem] lg:w-[32rem] lg:h-auto flex rounded border hover:border-none overflow-hidden relative bg-[#15151F]"
+            draggable={false}
+            className="w-[16rem] h-[8rem] sm:w-[18rem] sm:h-[10rem] md:w-[20rem] lg:w-[25rem] xl:w-[35rem] lg:h-auto flex rounded border hover:border-none overflow-hidden relative bg-[#15151F]"
           >
             <img
               className="w-full h-full object-cover"
+              draggable={false}
               src={Portfolio}
               alt="Music Player app"
             />
@@ -144,15 +151,17 @@ export const Projects = () => {
           </motion.a>
           <motion.a
             whileHover={{
-              scale: 1.08,
+              scale: 1.05,
               transition: { duration: 0.1, ease: "easeInOut" },
             }}
             whileTap={{ scale: 1 }}
             href="/"
-            className="w-[16rem] sm:w-[18rem] md:w-[20rem] lg:w-[32rem] flex rounded overflow-hidden relative bg-[#15151F]"
+            draggable={false}
+            className="w-[16rem] sm:w-[18rem] md:w-[20rem] lg:w-[25rem] xl:w-[35rem] flex rounded overflow-hidden relative bg-[#15151F]"
           >
             <img
               className="w-full h-full object-cover"
+              draggable={false}
               src={Unfinished}
               alt="Music Player app"
             />
@@ -186,15 +195,17 @@ export const Projects = () => {
           </motion.a>
           <motion.a
             whileHover={{
-              scale: 1.08,
+              scale: 1.05,
               transition: { duration: 0.1, ease: "easeInOut" },
             }}
             whileTap={{ scale: 1 }}
             href="/"
-            className="w-[18rem] md:w-[20rem] lg:w-[32rem] hidden sm:flex rounded overflow-hidden relative bg-[#15151F]"
+            draggable={false}
+            className="w-[18rem] md:w-[20rem] lg:w-[25rem] xl:w-[35rem] hidden sm:flex rounded overflow-hidden relative bg-[#15151F]"
           >
             <img
               className="w-full h-full object-cover"
+              draggable={false}
               src={Unfinished}
               alt="Music Player app"
             />
@@ -228,15 +239,17 @@ export const Projects = () => {
           </motion.a>
           <motion.a
             whileHover={{
-              scale: 1.08,
+              scale: 1.05,
               transition: { duration: 0.1, ease: "easeInOut" },
             }}
             whileTap={{ scale: 1 }}
             href="/"
-            className="hidden w-[18rem] md:w-[20rem] lg:w-[32rem] sm:flex rounded overflow-hidden relative bg-[#15151F]"
+            draggable={false}
+            className="hidden w-[18rem] md:w-[20rem] lg:w-[25rem] xl:w-[35rem] sm:flex rounded overflow-hidden relative bg-[#15151F]"
           >
             <img
               className="w-full h-full object-cover"
+              draggable={false}
               src={Pong}
               alt="Music Player app"
             />

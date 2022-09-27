@@ -1,9 +1,21 @@
 import React, { useState } from "react";
 import Logo from "../assets/images/Logo.png";
 import { motion } from "framer-motion";
-import { Burger } from "@mantine/core";
+import { Menu, Burger, createStyles } from "@mantine/core";
+import PDF from "../assets/JLemosResume.pdf";
+
+const useStyles = createStyles((theme) => ({
+  item: {
+    "&[data-hovered]": {
+      backgroundColor:
+        theme.colors[theme.primaryColor][theme.fn.primaryShade()],
+      color: theme.white,
+    },
+  },
+}));
 
 const Navbar = () => {
+  const { classes } = useStyles();
   const [opened, setOpened] = useState(false);
   const title = opened ? "Close navigation" : "Open navigation";
   return (
@@ -24,32 +36,60 @@ const Navbar = () => {
       transition={{ duration: 0.7 }}
       animate={{ opacity: 1 }}
     >
-      <div className="flex items-center gap-5" >
+      <div className="flex items-center gap-5">
         <div className="w-10 sm:w-14">
           <img src={Logo} alt="/" />
         </div>
-        <h1 className="text-2xl sm:text-3xl">Justin Lemos</h1>
+        <a
+          href="/"
+          className="text-2xl sm:text-3xl hover:text-[#537DAC] transition-all"
+        >
+          Justin Lemos
+        </a>
       </div>
-      <Burger
-        className="md:hidden"
+      <Menu
         opened={opened}
-        onClick={() => setOpened((o) => !o)}
-        title={title}
-      />
-      <ul
-        className="md:flex
-gap-8 hidden"
+        onChange={setOpened}
+        classNames={classes}
+        position="bottom"
+        offset={20}
+        shadow="xl"
+        width="100vw"
+        withArrow
       >
-        <li className="text-lg">
+        <Menu.Target>
+          <Burger
+            className="md:hidden"
+            opened={opened}
+            onClick={() => setOpened((o) => !o)}
+            title={title}
+          />
+        </Menu.Target>
+
+        <Menu.Dropdown>
+          <Menu.Item>Settings</Menu.Item>
+          <Menu.Divider />
+          <Menu.Item>Messages</Menu.Item>
+          <Menu.Divider />
+          <Menu.Item>Gallery</Menu.Item>
+        </Menu.Dropdown>
+      </Menu>
+      <ul
+        className="hidden md:flex
+gap-8"
+      >
+        <li className="text-lg hover:text-[#537DAC] hover:border-b-[1px] hover:border-[#537DAC] transition-all ">
           <a href="#about">About</a>
         </li>
-        <li className="text-lg">
+        <li className="text-lg hover:text-[#537DAC] hover:border-b-[1px] hover:border-[#537DAC] transition-all ">
           <a href="#projects">Projects</a>
         </li>
-        <li className="text-lg">
-          <a href="/">Resume</a>
+        <li className="text-lg hover:text-[#537DAC] hover:border-b-[1px] hover:border-[#537DAC] transition-all ">
+          <a href={PDF} download="JLemosResume.pdf">
+            Resume
+          </a>
         </li>
-        <li className="text-lg">
+        <li className="text-lg hover:text-[#537DAC] hover:border-b-[1px] hover:border-[#537DAC] transition-all ">
           <a href="#contact">Contact</a>
         </li>
       </ul>

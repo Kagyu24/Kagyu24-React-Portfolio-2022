@@ -45,11 +45,11 @@ export const Contact = () => {
         transition={{ delay: 1, duration: 0.7 }}
         animate={{ translateX: 0, opacity: 1 }}
       >
-        <div className="w-full sm:w-1/2 h-1/2 flex flex-col sm:gap-20 justify-center items-start lg:items-center sm:p-7">
-          <div className="w-full sm:w-auto flex justify-center items-center text-[.8rem] sm:text-[.84rem] md:text-[1.05rem] lg:text-2xl font-semibold">
-            <h1>Get In Touch With Me</h1>
+        <div className="w-full sm:w-1/2 h-1/2 flex flex-col sm:gap-20 justify-center items-start lg:items-center sm:p-7 md:pl-7">
+          <div className="w-full sm:w-auto lg:hidden xl:flex justify-center items-center text-[.8rem] sm:text-[.84rem] md:text-[1.05rem] lg:text-2xl font-normal">
+            <h1 className="flex justify-center">Get In Touch With Me</h1>
           </div>
-          <div className="w-1/2 flex flex-col gap-12 justify-center items-center text-3xl leading-snug  hidden lg:flex">
+          <div className="w-1/2 flex flex-col gap-12 justify-center items-center text-3xl leading-snug  hidden lg:flex font-light">
             <p>
               I'd love to hear back from you, and thank you for looking though
               my site!
@@ -59,31 +59,31 @@ export const Contact = () => {
               side of the page!
             </p>
           </div>
-          <div className="w-full sm:w-1/2 flex flex-col sm:gap-5 justify-center items-center sm:items-start sm:text-[1.3rem] md:text-2xl">
+          <div className="w-full sm:w-1/2 flex flex-col sm:gap-5 justify-center items-center sm:items-start sm:text-[1.3rem] md:text-2xl font-light">
             <div className=" flex justify-start items-center gap-5">
               <FontAwesomeIcon icon={faLocationDot} />
               <p>Sherwood, OR</p>
             </div>
             <a
               href="tel:541-228-2538"
-              className="flex justify-start items-center gap-5"
+              className="flex justify-start items-center gap-5 border-b-[1px] hover:text-[#537DAC] hover:border-[#537DAC] transition-all"
             >
               <FontAwesomeIcon icon={faPhone} />
               <p>541-228-2538</p>
             </a>
             <a
               href="mailto:justinlemos25@gmail.com"
-              className=" flex justify-start items-center gap-5"
+              className=" flex justify-start items-center gap-5 border-b-[1px] hover:text-[#537DAC] hover:border-[#537DAC] transition-all"
             >
               <FontAwesomeIcon icon={faEnvelope} />
               <p>justinlemos25@gmail.com</p>
             </a>
           </div>
         </div>
-        <div className="h-1/2 w-full sm:w-1/2 flex justify-start items-center">
+        <div className="h-1/2 w-full sm:w-1/2 flex justify-center items-center">
           <div className="w-full sm:w-3/4 flex justify-center items-center p-5 border rounded-md border-[#537dac]">
             <form
-              className="flex flex-col justify-start items-center w-full font-Lato"
+              className="flex flex-col justify-center items-center w-full font-Lato"
               ref={form}
               onSubmit={sendEmail}
             >
